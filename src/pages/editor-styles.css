@@ -1,0 +1,123 @@
+/* Toolbar container styling */
+.ql-toolbar {
+  background-color: #1a1a1a !important; /* Dark background for toolbar */
+  border: 1px solid #333 !important; /* Subtle border */
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* Toolbar buttons styling */
+.ql-toolbar button {
+  color: rgba(255, 255, 255, 0.6) !important; /* Light gray text */
+  border: 1px solid transparent; /* No visible border initially */
+  border-radius: 4px; /* Slightly rounded buttons */
+  padding: 6px; /* Button padding */
+  margin: 0 4px; /* Add spacing between buttons */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.ql-toolbar button:hover {
+  color: rgba(255, 255, 255, 1) !important; /* White text on hover */
+  background-color: #333 !important; /* Slightly darker background */
+  border-color: #555 !important; /* Subtle border highlight */
+  cursor: pointer;
+}
+
+/* Dropdown menus styling */
+.ql-toolbar .ql-picker {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ) !important; /* Light gray text for dropdowns */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.ql-toolbar .ql-picker:hover {
+  color: rgba(255, 255, 255, 1) !important; /* White text on hover */
+  background-color: #333 !important;
+  border-color: #555 !important;
+}
+
+/* Dropdown options */
+.ql-picker-options {
+  background-color: #1a1a1a !important; /* Dark dropdown background */
+  border: 1px solid #333 !important;
+  color: rgba(255, 255, 255, 0.87) !important; /* White text */
+  border-radius: 4px;
+}
+
+.ql-picker-options .ql-picker-item {
+  padding: 4px 8px;
+}
+
+.ql-picker-options .ql-picker-item:hover {
+  background-color: #333 !important; /* Slightly darker background on hover */
+  color: rgba(255, 255, 255, 1) !important; /* White text on hover */
+}
+
+/* Editor area styling */
+.ql-container {
+  background-color: #1a1a1a !important; /* Match the dark theme */
+  color: rgba(255, 255, 255, 0.87) !important; /* White text */
+  border: 1px solid #333 !important;
+  border-radius: 6px;
+}
+
+/* Editor text area */
+.ql-editor {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.87); /* White text */
+  padding: 8px;
+}
+
+.ql-editor:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Fix for dropdown alignment */
+.ql-picker {
+  display: inline-flex !important; /* Align the picker content inline */
+  align-items: center !important; /* Vertically center content */
+  justify-content: space-between !important; /* Add spacing for arrow icon */
+  line-height: normal !important; /* Reset line-height */
+  padding: 0 !important; /* Remove unnecessary padding */
+  width: 115px !important; /* Full width for dropdown */
+}
+
+.ql-picker-label {
+  display: inline-flex !important; /* Inline layout for label */
+  align-items: center !important; /* Center text vertically */
+  padding: 4px 8px !important; /* Balanced padding */
+  font-size: 1rem !important; /* Adjust font size */
+  color: rgba(255, 255, 255, 0.87) !important; /* Text color */
+}
+
+.ql-picker-label:hover {
+  color: rgba(255, 255, 255, 1) !important; /* White on hover */
+  background-color: #333 !important; /* Subtle dark hover background */
+}
+
+.ql-picker-options {
+  background-color: #1a1a1a !important; /* Dark dropdown background */
+  color: rgba(255, 255, 255, 0.87) !important; /* White text */
+  border: 1px solid #333 !important; /* Subtle border */
+  border-radius: 4px; /* Rounded dropdown */
+  z-index: 1000; /* Ensure dropdown stays on top */
+  padding: 4px 0 !important; /* Add space between options */
+}
+
+.ql-picker-options .ql-picker-item {
+  padding: 4px 12px !important; /* Padding for dropdown items */
+}
+
+.ql-picker-options .ql-picker-item:hover {
+  background-color: #333 !important; /* Highlight option on hover */
+  color: rgba(255, 255, 255, 1) !important; /* White text on hover */
+}
